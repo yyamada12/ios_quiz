@@ -10,10 +10,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Start View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Quiz" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="StartViewController" customModule="Quiz" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -23,8 +23,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <state key="normal" title="START"/>
                                 <connections>
-                                    <action selector="tapStartButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NAe-bp-W7R"/>
-                                    <segue destination="2VA-ss-uZD" kind="presentation" id="zcf-L2-UHt"/>
+                                    <segue destination="2VA-ss-uZD" kind="presentation" id="YcN-e6-Sp9"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="QuiiiiiZ!!!!!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HFv-eZ-Gm3">
@@ -47,11 +46,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="23" y="27"/>
         </scene>
-        <!--View Controller-->
+        <!--Question View Controller-->
         <scene sceneID="Q0c-0i-KHH">
             <objects>
-                <viewController storyboardIdentifier="question" id="2VA-ss-uZD" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="question" id="2VA-ss-uZD" customClass="QuestionViewController" customModule="Quiz" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="427-AW-vQX">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -72,6 +72,9 @@
                                         <state key="normal" title="Button">
                                             <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                         </state>
+                                        <connections>
+                                            <action selector="tapAnswer1Button:" destination="2VA-ss-uZD" eventType="touchUpInside" id="gnK-fz-3v8"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n6K-cH-fX9">
                                         <rect key="frame" x="0.0" y="102.5" width="315" height="92.5"/>
@@ -80,6 +83,9 @@
                                         <state key="normal" title="Button">
                                             <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                         </state>
+                                        <connections>
+                                            <action selector="tapAnswer2Button:" destination="2VA-ss-uZD" eventType="touchUpInside" id="QIS-sa-BNH"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tgE-Wm-dEr">
                                         <rect key="frame" x="0.0" y="205" width="315" height="92.5"/>
@@ -88,6 +94,9 @@
                                         <state key="normal" title="Button">
                                             <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                         </state>
+                                        <connections>
+                                            <action selector="tapAnswer3Button:" destination="2VA-ss-uZD" eventType="touchUpInside" id="W5x-Ez-xjN"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nm2-Ry-pdG">
                                         <rect key="frame" x="0.0" y="307.5" width="315" height="92.5"/>
@@ -96,6 +105,9 @@
                                         <state key="normal" title="Button">
                                             <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                         </state>
+                                        <connections>
+                                            <action selector="tapAnswer4Button:" destination="2VA-ss-uZD" eventType="touchUpInside" id="39a-F4-fPT"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -135,15 +147,25 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="3fp-ND-dGM"/>
                     </view>
+                    <connections>
+                        <outlet property="answer1Button" destination="mOY-EM-BwK" id="Med-3N-0rP"/>
+                        <outlet property="answer2Button" destination="n6K-cH-fX9" id="Rz0-fH-pOo"/>
+                        <outlet property="answer3Button" destination="tgE-Wm-dEr" id="TWC-0j-zlD"/>
+                        <outlet property="answer4Button" destination="Nm2-Ry-pdG" id="aMK-6Z-nVp"/>
+                        <outlet property="correctImageView" destination="itE-S4-nwu" id="yTC-Hq-l6W"/>
+                        <outlet property="incorrectImageView" destination="gse-93-IpG" id="fBl-jI-lTo"/>
+                        <outlet property="questionNoLabel" destination="zSO-Ji-Ten" id="IDW-ss-xmR"/>
+                        <outlet property="questionTextView" destination="9uu-7k-7Ka" id="5m0-9Y-wIy"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="H48-zT-HUd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="826" y="27"/>
         </scene>
-        <!--View Controller-->
+        <!--Result View Controller-->
         <scene sceneID="huH-wj-x1m">
             <objects>
-                <viewController storyboardIdentifier="result" id="Cl6-vn-i7d" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="result" id="Cl6-vn-i7d" customClass="ResultViewController" customModule="Quiz" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Rq6-uJ-4VO">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -152,6 +174,9 @@
                                 <rect key="frame" x="98.5" y="334" width="178" height="42"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <state key="normal" title="タイトルへ戻る"/>
+                                <connections>
+                                    <segue destination="rBe-M4-Ch8" kind="unwind" unwindAction="goToTitle:" id="hSb-Qn-Xhr"/>
+                                </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="skm-g0-1cR">
                                 <rect key="frame" x="107" y="90" width="161" height="204"/>
@@ -186,8 +211,12 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="nDg-Ri-Eh6"/>
                     </view>
+                    <connections>
+                        <outlet property="correctPercentLabel" destination="DQY-vj-Zjb" id="mHc-b6-EsX"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zTX-Wm-GeM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="rBe-M4-Ch8" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1582" y="27"/>
         </scene>

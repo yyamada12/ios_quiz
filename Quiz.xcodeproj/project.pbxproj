@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		1B7B6B6122A7322800740099 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B7B6B6022A7322800740099 /* AppDelegate.swift */; };
-		1B7B6B6322A7322800740099 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B7B6B6222A7322800740099 /* ViewController.swift */; };
 		1B7B6B6622A7322800740099 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B7B6B6422A7322800740099 /* Main.storyboard */; };
 		1B7B6B6822A7323100740099 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B7B6B6722A7323100740099 /* Assets.xcassets */; };
 		1B7B6B6B22A7323100740099 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B7B6B6922A7323100740099 /* LaunchScreen.storyboard */; };
@@ -16,12 +15,14 @@
 		1B7B6B7622A733B600740099 /* wind01.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1B7B6B7522A733B600740099 /* wind01.mp3 */; };
 		1B7B6B7822A9E80900740099 /* question.csv in Resources */ = {isa = PBXBuildFile; fileRef = 1B7B6B7722A9E80900740099 /* question.csv */; };
 		1B7B6B7A22A9E8E100740099 /* QuestionDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B7B6B7922A9E8E100740099 /* QuestionDataManager.swift */; };
+		1B7B6B7E22ABBA5500740099 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B7B6B7D22ABBA5500740099 /* StartViewController.swift */; };
+		1B7B6B8022ABBB7000740099 /* QuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B7B6B7F22ABBB7000740099 /* QuestionViewController.swift */; };
+		1B7B6B8222ABC39900740099 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B7B6B8122ABC39900740099 /* ResultViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1B7B6B5D22A7322800740099 /* Quiz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Quiz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B7B6B6022A7322800740099 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1B7B6B6222A7322800740099 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		1B7B6B6522A7322800740099 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1B7B6B6722A7323100740099 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1B7B6B6A22A7323100740099 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -30,6 +31,9 @@
 		1B7B6B7522A733B600740099 /* wind01.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = wind01.mp3; sourceTree = "<group>"; };
 		1B7B6B7722A9E80900740099 /* question.csv */ = {isa = PBXFileReference; lastKnownFileType = text; path = question.csv; sourceTree = "<group>"; };
 		1B7B6B7922A9E8E100740099 /* QuestionDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionDataManager.swift; sourceTree = "<group>"; };
+		1B7B6B7D22ABBA5500740099 /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
+		1B7B6B7F22ABBB7000740099 /* QuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionViewController.swift; sourceTree = "<group>"; };
+		1B7B6B8122ABC39900740099 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,8 +70,10 @@
 			children = (
 				1B7B6B7522A733B600740099 /* wind01.mp3 */,
 				1B7B6B6022A7322800740099 /* AppDelegate.swift */,
-				1B7B6B6222A7322800740099 /* ViewController.swift */,
 				1B7B6B6422A7322800740099 /* Main.storyboard */,
+				1B7B6B7D22ABBA5500740099 /* StartViewController.swift */,
+				1B7B6B7F22ABBB7000740099 /* QuestionViewController.swift */,
+				1B7B6B8122ABC39900740099 /* ResultViewController.swift */,
 				1B7B6B7722A9E80900740099 /* question.csv */,
 				1B7B6B7922A9E8E100740099 /* QuestionDataManager.swift */,
 				1B7B6B6722A7323100740099 /* Assets.xcassets */,
@@ -159,8 +165,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				1B7B6B7A22A9E8E100740099 /* QuestionDataManager.swift in Sources */,
-				1B7B6B6322A7322800740099 /* ViewController.swift in Sources */,
+				1B7B6B8022ABBB7000740099 /* QuestionViewController.swift in Sources */,
+				1B7B6B7E22ABBA5500740099 /* StartViewController.swift in Sources */,
 				1B7B6B6122A7322800740099 /* AppDelegate.swift in Sources */,
+				1B7B6B8222ABC39900740099 /* ResultViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
