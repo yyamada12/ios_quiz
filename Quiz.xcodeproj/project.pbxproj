@@ -14,6 +14,8 @@
 		1B7B6B6B22A7323100740099 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B7B6B6922A7323100740099 /* LaunchScreen.storyboard */; };
 		1B7B6B7422A7327A00740099 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B7B6B7322A7327A00740099 /* AudioToolbox.framework */; };
 		1B7B6B7622A733B600740099 /* wind01.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1B7B6B7522A733B600740099 /* wind01.mp3 */; };
+		1B7B6B7822A9E80900740099 /* question.csv in Resources */ = {isa = PBXBuildFile; fileRef = 1B7B6B7722A9E80900740099 /* question.csv */; };
+		1B7B6B7A22A9E8E100740099 /* QuestionDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B7B6B7922A9E8E100740099 /* QuestionDataManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		1B7B6B6C22A7323100740099 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1B7B6B7322A7327A00740099 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		1B7B6B7522A733B600740099 /* wind01.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = wind01.mp3; sourceTree = "<group>"; };
+		1B7B6B7722A9E80900740099 /* question.csv */ = {isa = PBXFileReference; lastKnownFileType = text; path = question.csv; sourceTree = "<group>"; };
+		1B7B6B7922A9E8E100740099 /* QuestionDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionDataManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +68,8 @@
 				1B7B6B6022A7322800740099 /* AppDelegate.swift */,
 				1B7B6B6222A7322800740099 /* ViewController.swift */,
 				1B7B6B6422A7322800740099 /* Main.storyboard */,
+				1B7B6B7722A9E80900740099 /* question.csv */,
+				1B7B6B7922A9E8E100740099 /* QuestionDataManager.swift */,
 				1B7B6B6722A7323100740099 /* Assets.xcassets */,
 				1B7B6B6922A7323100740099 /* LaunchScreen.storyboard */,
 				1B7B6B6C22A7323100740099 /* Info.plist */,
@@ -138,6 +144,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1B7B6B6B22A7323100740099 /* LaunchScreen.storyboard in Resources */,
+				1B7B6B7822A9E80900740099 /* question.csv in Resources */,
 				1B7B6B6822A7323100740099 /* Assets.xcassets in Resources */,
 				1B7B6B6622A7322800740099 /* Main.storyboard in Resources */,
 				1B7B6B7622A733B600740099 /* wind01.mp3 in Resources */,
@@ -151,6 +158,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B7B6B7A22A9E8E100740099 /* QuestionDataManager.swift in Sources */,
 				1B7B6B6322A7322800740099 /* ViewController.swift in Sources */,
 				1B7B6B6122A7322800740099 /* AppDelegate.swift in Sources */,
 			);
